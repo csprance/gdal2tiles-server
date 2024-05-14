@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  gdal2tiles-server:
+    container_name: gdal2tiles-server
+    restart: always
+    build: ./gdal2tiles-server
+    ports:
+      - "8000:8000"
+    volumes:
+      - gdal_tiles:/tiles
+
+volumes:
+  gdal_tiles:
+    external: true

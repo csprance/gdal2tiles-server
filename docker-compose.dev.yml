@@ -1,0 +1,4 @@
+services:
+  gdal2tiles-server:
+    volumes:
+      - ./tiles:/tiles

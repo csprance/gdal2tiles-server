@@ -1,0 +1,10 @@
+POST http://localhost:8000/upload/
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="test.png"
+
+< ./test-image.png
+--WebAppBoundary--
+
+###
