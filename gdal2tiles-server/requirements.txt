@@ -1,3 +1,4 @@
 fastapi
 uvicorn
 GDAL==3.0.4
+python-multipart
